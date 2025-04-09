@@ -1,0 +1,53 @@
+.Footer{
+  height: 65vh;
+  width: 100%;
+  background-color:$background-color;
+
+  display: flex;
+  flex-direction: column;
+  &__p2{
+    text-align: center;
+    color:$text-color;
+    font-size: 12px;
+  }
+
+  &__navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 6%;
+    margin-bottom: 3%;
+    a{
+      font-size: 20px;
+    }
+  }
+  &__connection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:11.5%;
+    margin-right:10.5%;
+    &__1{
+      display: flex;
+      flex-direction: column;
+      p{
+        color:$text-color;
+        font-size: 20px;
+      }
+    }
+    &__2{
+      display: flex;
+      flex-direction: row;
+      gap: 6%;
+    }
+  }
+  &__sponsorsLogo{
+    display: flex;
+    justify-content: flex-start;
+
+    margin-right:9%;
+    margin-left:auto;;
+    width:16%;
+    margin-bottom:2%;
+  }
+}

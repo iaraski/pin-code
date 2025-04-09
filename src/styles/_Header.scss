@@ -1,0 +1,44 @@
+// _Header.scss
+
+.Header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: $background-color;
+  height: 80px;
+  align-items: center;
+  nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.8rem;
+    a{
+      color: #fff;
+      text-decoration: none;
+      padding:15px 0;
+      align-items: center;
+      &:hover{
+       color:$btn-colors
+
+      }
+      &.active{
+        color:$btn-colors;
+      }
+    }
+  }
+  .nav__1{
+    margin-left: 15%;
+  }
+  .nav__2{
+    justify-self: flex-end;
+    margin-right: 15%;
+  }
+  .logo_container{
+    display: flex;
+    justify-content: center;
+    height: 60%;
+  }
+
+
+}

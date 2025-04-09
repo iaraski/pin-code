@@ -1,0 +1,119 @@
+// main.scss
+
+// Глобальные переменные
+$text-color: #C7C7C7;
+$background-color: #292929;
+$btn-colors: #4F5BD5;
+
+
+/* Подключение шрифта Evolventa */
+
+body {
+  font-family: 'Evolventa', sans-serif;
+}
+
+/* Заголовки */
+h1 {
+  font-family: 'Evolventa', sans-serif;
+  font-weight: bold;
+  font-size: 3.75rem;       /* 60px */
+  line-height: 4.375rem;    /* 70px */
+}
+
+h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 2.375rem;      /* 38px */
+  line-height: 3.125rem;    /* 50px */
+}
+
+h3 {
+  font-family: 'Evolventa', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;        /* 24px */
+  line-height: 2.125rem;    /* 34px */
+}
+
+h4 {
+  font-family: 'Evolventa', sans-serif;
+  font-weight: bold;
+  font-size: 20px;      /* 22px */
+  line-height: 1.75rem;     /* 28px */
+}
+
+h5 {
+  font-family: 'Evolventa', sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;      /* 18px */
+  line-height: 1.5rem;      /* 24px */
+}
+
+h6 {
+  font-family: 'Evolventa', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;          /* 16px */
+  line-height: 1.375rem;    /* 22px */
+}
+
+/* Параграф */
+p,a {
+  font-family: 'Evolventa', sans-serif;
+  font-weight: normal;
+  font-size: 1.125rem;      /* 18px */
+  line-height: 1.5;
+}
+/* Кнопка */
+button {
+  font-family: 'Evolventa', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;          /* 16px */
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  padding:15px 0;
+  align-items: center;
+  transition: all .5s;
+  &:hover{
+    color:$btn-colors
+
+  }
+  &:active{}
+}
+.button_white{
+  background-color:$btn-colors;
+  width: fit-content;
+  height: fit-content;
+  padding:21px 55px;
+  border-radius: 45px;
+  border:1px solid $btn-colors;
+  transition: all .5s;
+  color: white;
+  &:hover{
+    background-color: white;
+    color:$btn-colors;
+  }
+}
+h2{
+  text-align: center;
+  margin-bottom: 4%;
+  padding-top: 6%;
+}
+.p1{
+  text-align: center;
+  width:60%;
+  margin:auto auto 5% auto;
+  font-weight: 300;
+}
+
+
+// Импорт других файлов
+@import "_Header.scss";
+@import "./_Home.scss";
+@import "./_Footer.scss";
+@import "./_Portfolio.scss";
+@import "./_HorizontalCard.scss";
+@import "./_Connection.scss";
+@import "./_Services.scss";
+@import "./_InfoblockProblem.scss";
