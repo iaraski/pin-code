@@ -56,7 +56,7 @@ h6 {
 }
 
 /* Параграф */
-p,a {
+p,a, ul {
   font-family: 'Evolventa', sans-serif;
   font-weight: normal;
   font-size: 1.125rem;      /* 18px */
@@ -117,3 +117,6 @@ h2{
 @import "./_Connection.scss";
 @import "./_Services.scss";
 @import "./_InfoblockProblem.scss";
+@import "./_Triager.scss";
+@import "./_Janna.scss";
+@import "./_Kastel.scss";
