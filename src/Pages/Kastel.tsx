@@ -1,4 +1,5 @@
 import Infoblock, {Block} from "../Components/Infoblock.tsx";
+import Technology, {blockTechnology} from "../Components/Technology.tsx";
 
 const Problemblocks: Block[] =[
     {
@@ -58,13 +59,68 @@ const desicionProblem:Block[] =[
     }
 ]
 
+const technologyBlock:blockTechnology[] = [
+    {
+        id:"a",
+        Num:"1",
+        content:(
+            <>
+                <b>Создание и разработка</b><br/> онлайн-платформы, включающие <br/> в себя маршруты, подобранные <br/> по критериям пользователей;
+            </>
+        )
+    },
+    {
+        id:"a",
+        Num:"4",
+        content:(
+            <>
+                <b>Освещение</b> исторических мест <br/>в медиапространств;
+            </>
+        )
+    },
+    {
+        id:"a",
+        Num:"2",
+        content:(
+            <>
+                <b>Прописывание</b> культурной ценности <br/>в каждом объекте представленном <br/>в маршруте;
+            </>
+        )
+    },
+    {
+        id:"a",
+        Num:"5",
+        content:(
+            <>
+                <b>Добавление дополнительных <br/> функций.</b>
+            </>
+        )
+    },
+    {
+        id:"a",
+        Num:"3",
+        content:(
+            <>
+                <b>Сортировка</b> каждой <br/> достопримечательности по критериям;
+            </>
+        )
+    }
+
+]
+
 export default function Kastel(){
     return(
-        <div className="Kastel">
+        <main className="Kastel">
             <h2>Кастель</h2>
             <p className="p1">Туристическая онлайн-платформа</p>
-            <Infoblock blocks = { Problemblocks } layout = "alternative" backgroundColor = "#292929" color = "white" />
-            <Infoblock blocks = {desicionProblem} backgroundColorBlock = "#292929" color = "white" backgroundColor="#6254e6" />
-        </div>
+            <Infoblock blocks={Problemblocks} layout="alternative" backgroundColor="#292929" color="white"/>
+            <Infoblock blocks={desicionProblem} backgroundColorBlock="#292929" color="white" backgroundColor="#6254e6"/>
+            <h2>Наш путь развития</h2>
+            <div className="Kastel__numAndLine">
+                <div></div>
+                <p>03</p>
+            </div>
+            <Technology className="Technology" blocks={technologyBlock}/>
+        </main>
     )
 }

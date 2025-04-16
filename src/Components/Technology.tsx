@@ -1,15 +1,17 @@
 import React, {JSX} from "react";
 
-interface block {
+export interface blockTechnology {
     id?: string,
-    content:JSX.Element,
+    content?:JSX.Element,
     image?: string,
     Num?: string,
+    title?: string | JSX.Element,
+    underline?:boolean,
 }
 
 interface technologyProps{
-    className: "Technology"| "PathDevelopment",
-    blocks: block[],
+    className: "Technology",
+    blocks: blockTechnology[],
 }
 
 
@@ -19,11 +21,14 @@ const Technology: React.FC<technologyProps> = ({className,blocks}) => {
             {blocks.map((block, index) => {
                 const areaName = String.fromCharCode(97 + index);
                 return (
-                    <div key={block.id} className={className + "__item__" + areaName}>
-                        {block.image ? <img src={block.image} alt="Image" /> : <h3>{block.Num}</h3>}
+                    <div key={block.id} className={className + "__item " + areaName}>
+                        {block.image && <img src={block.image} alt=""/>}
+                        {block.Num && <h3>{block.Num}</h3>}
                         <div>
-                            {block.image}
+                            {block.title && <h4>{block.title}</h4>}
+                            {block.content && <p>{block.content}</p>}
                         </div>
+                        {block.underline && <div className={className + "__underline"}></div>}
                     </div>
                 )
             })}

@@ -1,5 +1,24 @@
 .Janna{
+position: relative;
   .p1{
     margin-bottom: 0;
+  }
+  &__numAndLine{
+    position: absolute;
+    left:7%;
+    top:70%;
+    display: flex;
+    flex-direction: row;
+    p{
+      margin-left:5px;
+      font-size: 15px;
+    }
+    div{
+      border-top:2px solid black;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      margin: auto;
+    }
   }
 }

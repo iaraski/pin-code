@@ -23,6 +23,7 @@
     height: fit-content;
     p{
       margin-left:5px;
+      font-size: 15px !important;
     }
   }
 }
@@ -36,6 +37,30 @@
   grid-template-areas:
         "a b"
         "a b";
+}
+.DynamicGrid--alternative[data-blocks-count="2"]{
+  grid-template-areas:
+    "a b";
+  grid-template-columns:40% 40%;
+  gap:10%;
+  height: 100vh;
+}
+.DynamicGrid--alternative[data-blocks-count="2"] .DynamicGrid--alternative__item{
+  margin-top:0;
+  height: 80%;
+  div{
+    margin-top:0;
+  }
+  h3,p{
+    text-align: start;
+  }
+  h3{
+    font-size: 35px;
+    margin-bottom: 1%;
+  }
+  p{
+    font-size:18px;
+  }
 }
 .DynamicGrid[data-blocks-count="2"] {
   display: grid;
@@ -194,7 +219,7 @@
         text-align: start;
       }
       p{
-        padding:0 0 0 0;
+        padding:0;
         text-align:start;
         margin-right: 13%;
       }

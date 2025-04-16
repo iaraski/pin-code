@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Evolventa', sans-serif;
   font-weight: bold;
   font-size: 2.375rem;      /* 38px */
   line-height: 3.125rem;    /* 50px */
@@ -97,7 +97,7 @@ a{
 }
 h2{
   text-align: center;
-  margin-bottom: 4%;
+  padding-bottom: 4%;
   padding-top: 6%;
 }
 .p1{
@@ -117,6 +117,8 @@ h2{
 @import "./_Connection.scss";
 @import "./_Services.scss";
 @import "./_InfoblockProblem.scss";
+@import "./_Technology.scss";
 @import "./_Triager.scss";
 @import "./_Janna.scss";
 @import "./_Kastel.scss";
+@import "./_Company.scss";

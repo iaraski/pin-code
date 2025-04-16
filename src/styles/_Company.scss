@@ -1,0 +1,12 @@
+.Company {
+  background-color: #292929;
+  h2{
+    color: white;
+  }
+  &__underline{
+    border:1px solid #939393;
+    width: 93%;
+    margin:auto;
+  }
+
+}

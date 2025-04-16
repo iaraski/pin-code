@@ -1,5 +1,9 @@
 import Infoblock, {Block} from "../Components/Infoblock.tsx";
 import janna from "../public/images/janna.png"
+import Technology, {blockTechnology} from "../Components/Technology.tsx";
+import Union from "../public/images/Union.svg"
+
+
 const ProblemBlock:Block[] = [
     {
         id: "a",
@@ -21,7 +25,7 @@ const ProblemBlock:Block[] = [
     },
     {
         id: "e",
-        title: "Дефцит времени"
+        title: "Дефицит времени"
     },
     {
         id: "f",
@@ -51,14 +55,46 @@ const desicionProblemBlock:Block[] = [
     }
 ]
 
+const technologyBlock:blockTechnology[] = [
+    {
+        id:"a",
+        title:"Анализ больших данных",
+        content:(<>Приложение способно принимать <br/>
+            и обрабатывать внушительные потоки <br/> информации с <b>минимальной задержкой</b></>),
+        image:Union,
+    },
+    {
+        id:"b",
+        title:"Машинное зрение",
+        content:(<>Позволяет сканировать содержимое <br/> вложений в письмах и на основе ключевых <br/> фраз обеспечивать <b>удобную сортировку</b></>),
+        image:Union,
+    },{
+        id:"c",
+        title:"Искусственный интеллект",
+        content:(<>Обеспечивает <b>точность</b> и <b>автономность</b> <br/>производимой сортировки</>),
+        image:Union,
+    },
+    {
+        id:"d",
+        title:(<>Отсутствие подобных <br/>решений на рынке</>),
+        image:Union,
+    }
+]
 
 export default function Janna(){
     return(
-        <div className="Janna">
+        <main className="Janna">
             <h2>Жанна</h2>
+            <div className="Janna__numAndLine">
+                <div></div>
+                <p>03</p>
+            </div>
             <p className="p1">Робот-администратор</p>
-            <Infoblock blocks={ProblemBlock} color="white" backgroundColor="#292929" />
-            <Infoblock blocks={desicionProblemBlock} color="white" backgroundColor="#6254e6"  backgroundColorBlock="#292929"/>
-        </div>
+            <Infoblock blocks={ProblemBlock} color="white" backgroundColor="#292929"/>
+            <Infoblock blocks={desicionProblemBlock} color="white" backgroundColor="#6254e6"
+                       backgroundColorBlock="#292929"/>
+            <h2>Технологии</h2>
+            <Technology blocks={technologyBlock} className="Technology"/>
+        </main>
     )
 }
