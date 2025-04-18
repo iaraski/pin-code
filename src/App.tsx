@@ -12,6 +12,7 @@ import"./styles/fonts.css"
 import Triager from "./Pages/Triager.tsx";
 import Janna from "./Pages/Janna.tsx";
 import Kastel from "./Pages/Kastel.tsx";
+import Consultation from "./Pages/Сonsultation.tsx";
 
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
                 <Route path="/triager" element={<Triager/>}/>
                 <Route path ="/janna" element={<Janna/>}/>
                 <Route path="/kastel" element={<Kastel/>}/>
+                <Route path="/services/consultation/:serviceType" element={<Consultation/>}/>
             </Routes>
             <Footer/>
         </Router>
