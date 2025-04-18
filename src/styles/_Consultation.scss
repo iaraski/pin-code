@@ -1,0 +1,40 @@
+.Consultation {
+  height: 160vh;
+  width: 100%;
+  &__form{
+    width: 43%;
+    margin:auto;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    button{
+      border: 1px solid $btn-colors;
+      margin: 5% auto auto auto;
+    }
+    textarea{
+      width: 100%;
+      resize: none;
+      overflow: auto;
+      height: 30%;
+      margin-bottom: 5%;
+      &::placeholder{
+        font-family: Evolventa, sans-serif;
+        font-size: 15px;
+        padding-top: 20px; /* Сдвигает текст вниз */
+        padding-left: 4%; /* Сдвигает текст вправо */
+      }
+    }
+    input{
+      width: 100%;
+      padding: 4%;
+      margin-bottom: 6%;
+      &::placeholder{
+        font-family: Evolventa, sans-serif;
+        font-size: 15px;
+      }
+    }
+    input, textarea{
+      border: 1px solid #939393;
+    }
+  }
+}

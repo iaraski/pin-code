@@ -945,4 +945,45 @@ h2 {
   margin: auto;
 }
 
+.Consultation {
+  height: 160vh;
+  width: 100%;
+}
+.Consultation__form {
+  width: 43%;
+  margin: auto;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.Consultation__form button {
+  border: 1px solid #4F5BD5;
+  margin: 5% auto auto auto;
+}
+.Consultation__form textarea {
+  width: 100%;
+  resize: none;
+  overflow: auto;
+  height: 30%;
+  margin-bottom: 5%;
+}
+.Consultation__form textarea::placeholder {
+  font-family: Evolventa, sans-serif;
+  font-size: 15px;
+  padding-top: 20px; /* Сдвигает текст вниз */
+  padding-left: 4%; /* Сдвигает текст вправо */
+}
+.Consultation__form input {
+  width: 100%;
+  padding: 4%;
+  margin-bottom: 6%;
+}
+.Consultation__form input::placeholder {
+  font-family: Evolventa, sans-serif;
+  font-size: 15px;
+}
+.Consultation__form input, .Consultation__form textarea {
+  border: 1px solid #939393;
+}
+
 /*# sourceMappingURL=main.css.map */
