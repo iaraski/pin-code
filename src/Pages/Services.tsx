@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import useWindowSize from "../hooks/useWindowSize.ts";
 
 export default function Services() {
+    const {width} = useWindowSize();
     return (
         <main className="Services">
             <h2>Наши услуги</h2>
@@ -12,7 +14,7 @@ export default function Services() {
                 <div>
                     <h4>Консультация по проекту/задаче/решению</h4>
                     <p>
-                        Если у вас возникают вопросы по существующему продукту/идея продукта, можно обратиться к нам
+                        Если у вас возникают вопросы по существующему{width <=768 ? <br/>:""} продукту/идея продукта, можно обратиться к нам
                     </p>
                 </div>
                 <button className="button_white">
@@ -22,7 +24,7 @@ export default function Services() {
             <div className="Services__block">
                 <div>
                     <h4>Разработка проекта</h4>
-                    <p>Мы предоставляем возможность разработки продукта/MVP и технической документации к нему</p>
+                    <p>Мы предоставляем возможность разработки продукта/MVP{width <=768 ? <br/>:""} и технической документации к нему</p>
                 </div>
                 <button className="button_white">
                     <Link to={`/services/consultation/development`}>Заказать</Link>
@@ -32,7 +34,7 @@ export default function Services() {
                 <div>
                     <h4>Внедрение продукта</h4>
                     <p>
-                        Если существует уже решение/продукт, но есть проблемы с внедрением его в организацию
+                        Если существует уже решение/продукт, но есть проблемы{width <=768 ? <br/>:""} с внедрением его в организацию
                     </p>
                 </div>
                 <button className="button_white">

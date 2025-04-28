@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /* Подключение шрифта Evolventa */
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
 body {
   font-family: "Evolventa", sans-serif;
 }
@@ -62,11 +67,6 @@ button {
   font-size: 1rem; /* 16px */
 }
 
-@media (max-width: 768px) {
-  p, a, ul {
-    font-size: 0.75rem;
-  }
-}
 a {
   color: #fff;
   text-decoration: none;
@@ -92,6 +92,11 @@ a:hover {
   color: #4F5BD5;
 }
 
+@media (max-width: 768px) {
+  .button_white {
+    padding: 10px 30px;
+  }
+}
 h2 {
   text-align: center;
   padding-bottom: 4%;
@@ -119,7 +124,7 @@ h2 {
   gap: 30px;
   align-items: center;
   justify-content: flex-start;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .Header nav a {
   color: #fff;
@@ -432,21 +437,12 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .Footer__navigation a {
-    font-size: 0.75rem;
-  }
   .Footer__sponsorsLogo {
     width: auto;
     margin: auto;
   }
-  .Footer__p2 {
-    font-size: 0.4rem;
-  }
   .Footer__connection {
     align-items: center;
-  }
-  .Footer__connection p {
-    font-size: 0.8rem;
   }
 }
 @media (max-width: 320px) {
@@ -499,7 +495,7 @@ h2 {
 }
 .HorizontalCard__content button {
   width: fit-content;
-  margin: auto 3% 2% auto;
+  margin: auto 6% 4% auto;
 }
 
 .connection {
@@ -523,6 +519,9 @@ h2 {
 }
 .connection_form button {
   border: 1px solid #4F5BD5;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 .connection_form textarea {
   width: 100%;
@@ -566,7 +565,6 @@ h2 {
     width: fit-content;
   }
   .connection_info p {
-    font-size: 1rem;
     text-align: center;
   }
   .connection_info_links {
@@ -590,11 +588,12 @@ h2 {
 }
 .Services__block {
   width: 93%;
-  height: 15vh;
+  height: auto;
   margin: 0 auto 3% auto;
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #939393;
+  padding-bottom: 3%;
 }
 .Services__block p {
   color: #C7C7C7;
@@ -602,9 +601,24 @@ h2 {
   margin-top: 1%;
 }
 .Services__block button {
-  margin: 0.5% 0 auto auto;
+  margin: 0 auto auto auto;
 }
 
+@media (max-width: 768px) {
+  .Services .p1 {
+    margin-bottom: 7%;
+  }
+  .Services p {
+    margin-bottom: 2%;
+  }
+  .Services__block {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .Services__block button {
+    margin: auto auto auto 0;
+  }
+}
 .DynamicGrid, .DynamicGrid--alternative {
   position: relative;
   display: grid;

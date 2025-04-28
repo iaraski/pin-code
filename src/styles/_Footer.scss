@@ -62,23 +62,15 @@
 @media (max-width: 768px){
   .Footer{
     &__navigation{
-      a{
-        font-size: 0.75rem;
-      }
+
     }
     &__sponsorsLogo{
       width:auto;
       margin:auto;
 
     }
-    &__p2{
-      font-size: 0.4rem;
-    }
     &__connection{
       align-items: center;
-      p{
-        font-size: 0.8rem;
-      }
 
     }
   }

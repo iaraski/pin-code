@@ -7,7 +7,11 @@ $btn-colors: #4F5BD5;
 
 
 /* Подключение шрифта Evolventa */
-
+@media(max-width: 768px){
+  html{
+    font-size: 12px;
+  }
+}
 body {
   font-family: 'Evolventa', sans-serif;
 }
@@ -68,11 +72,6 @@ button {
   font-weight: bold;
   font-size: 1rem;          /* 16px */
 }
-@media(max-width: 768px){
-  p,a,ul{
-    font-size: 0.75rem;
-  }
-}
 a{
   color: #fff;
   text-decoration: none;
@@ -97,6 +96,11 @@ a{
   &:hover{
     background-color: white;
     color:$btn-colors;
+  }
+}
+@media(max-width: 768px){
+  .button_white{
+    padding:10px 30px;
   }
 }
 h2{

@@ -6,18 +6,37 @@
   }
   &__block{
     width: 93%;
-    height: 15vh;
+    height: auto;
     margin: 0 auto 3% auto;
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid #939393;
+    padding-bottom:3%;
     p{
       color:$text-color;
       font-size: 0.9375rem;
       margin-top: 1%;
     }
     button{
-      margin:0.5% 0 auto auto;
+      margin: 0 auto auto auto;
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .Services{
+    .p1{
+      margin-bottom: 7%;
+    }
+    p{
+      margin-bottom:2%;
+    }
+    &__block{
+      flex-direction: column;
+      height: fit-content;
+      button{
+        margin: auto auto auto 0;
+      }
     }
   }
 }
