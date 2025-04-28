@@ -14,9 +14,10 @@
   &__navigation{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 90%;
+    margin:auto auto 3% auto;
     padding-top: 6%;
-    margin-bottom: 3%;
     a{
       font-size: 1.25rem;
     }
@@ -39,6 +40,9 @@
       display: flex;
       flex-direction: row;
       gap: 6%;
+      img{
+        width:100%;
+      }
     }
   }
   &__sponsorsLogo{
@@ -49,5 +53,33 @@
     margin-left:auto;;
     width:16%;
     margin-bottom:2%;
+    img{
+      width: 16%;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .Footer{
+    &__navigation{
+      a{
+        font-size: 0.75rem;
+      }
+    }
+    &__sponsorsLogo{
+      width:auto;
+      margin:auto;
+
+    }
+    &__p2{
+      font-size: 0.4rem;
+    }
+    &__connection{
+      align-items: center;
+      p{
+        font-size: 0.8rem;
+      }
+
+    }
   }
 }

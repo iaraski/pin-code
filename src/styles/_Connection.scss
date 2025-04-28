@@ -59,6 +59,19 @@
 //Заменить все единицы шрифтов на rem
 @media(max-width: 768px){
   .connection{
+    height:auto;
+    &_info{
+      margin:5% auto;
+      justify-content: center;
+      width: fit-content;
+      p{
+        font-size:1rem;
+        text-align: center;
+      }
+      &_links{
+        justify-content: center;
+      }
+    }
     &_form{
       width: 90%;
       margin:auto;
