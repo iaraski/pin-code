@@ -32,9 +32,9 @@ export default function Header(){
                 </nav>
             </>}
             {width <= 768 && <>
-                <img src={logo} alt=""/>
+                <Link to = ""><img src={logo} alt=""/></Link>
                 <nav>
-                    <Link to="/portfolio" className={activeLink === "portfolio" ? "active" : ""}
+                <Link to="/portfolio" className={activeLink === "portfolio" ? "active" : ""}
                           onClick={() => handleLinkClick("portfolio")}>Портфолио
                     </Link>
                     <Link to="/services" className={activeLink === "services" ? "active" : ""}
