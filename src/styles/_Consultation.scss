@@ -19,7 +19,7 @@
       margin-bottom: 5%;
       &::placeholder{
         font-family: Evolventa, sans-serif;
-        font-size: 15px;
+        font-size: 0.9375rem;
         padding-top: 20px; /* Сдвигает текст вниз */
         padding-left: 4%; /* Сдвигает текст вправо */
       }
@@ -30,7 +30,7 @@
       margin-bottom: 6%;
       &::placeholder{
         font-family: Evolventa, sans-serif;
-        font-size: 15px;
+        font-size: 0.9375rem;
       }
     }
     input, textarea{

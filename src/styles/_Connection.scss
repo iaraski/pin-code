@@ -11,7 +11,7 @@
       gap: 2%;
     }
     p{
-      font-size: 35px;
+      font-size: 2.1785rem;
       margin-bottom: 1%;
     }
   }
@@ -30,7 +30,7 @@
       margin-bottom: 5%;
       &::placeholder{
         font-family: Evolventa, sans-serif;
-        font-size: 15px;
+        font-size: 0.9375rem;
         padding-top: 20px; /* Сдвигает текст вниз */
         padding-left: 4%; /* Сдвигает текст вправо */
       }
@@ -41,7 +41,7 @@
       margin-bottom: 6%;
       &::placeholder{
         font-family: Evolventa, sans-serif;
-        font-size: 15px;
+        font-size: 0.9375rem;
       }
     }
   }
@@ -54,5 +54,18 @@
     gap:16%;
     height: 38%;
 
+  }
+}
+//Заменить все единицы шрифтов на rem
+@media(max-width: 768px){
+  .connection{
+    &_form{
+      width: 90%;
+      margin:auto;
+    }
+    &_info_and_form{
+      flex-direction: column-reverse;
+      width: 90%;
+    }
   }
 }

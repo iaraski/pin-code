@@ -37,7 +37,7 @@ h3 {
 h4 {
   font-family: 'Evolventa', sans-serif;
   font-weight: bold;
-  font-size: 20px;      /* 22px */
+  font-size: 1.25rem;      /* 22px */
   line-height: 1.75rem;     /* 28px */
 }
 
@@ -68,7 +68,11 @@ button {
   font-weight: bold;
   font-size: 1rem;          /* 16px */
 }
-
+@media(max-width: 768px){
+  p,a,ul{
+    font-size: 0.75rem;
+  }
+}
 a{
   color: #fff;
   text-decoration: none;
@@ -105,7 +109,7 @@ h2{
   width:60%;
   margin:auto auto 5% auto;
   font-weight: 300;
-}
+  }
 
 
 // Импорт других файлов

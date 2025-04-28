@@ -8,7 +8,7 @@
   &__p2{
     text-align: center;
     color:$text-color;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   &__navigation{
@@ -18,7 +18,7 @@
     padding-top: 6%;
     margin-bottom: 3%;
     a{
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
   &__connection{
@@ -32,7 +32,7 @@
       flex-direction: column;
       p{
         color:$text-color;
-        font-size: 20px;
+        font-size: 1.25rem;
       }
     }
     &__2{
