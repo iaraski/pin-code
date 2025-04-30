@@ -58,3 +58,31 @@
     width:70%;
   }
 }
+@media (min-width: 425px) and (max-width: 768px){
+  .Triager {
+    &__TechnologyBlock {
+      height: 190vh;
+    }
+  }
+}
+@media(max-width: 768px){
+  .Triager{
+    &__TechnologyBlock{
+      height: 170vh;
+      &__numAndLine{
+        top:2.5%;
+      }
+      &-left{
+        row-gap:6%;
+      }
+      &-right{
+        margin-top:10%;
+      }
+    }
+    &__TechnologyLeftRightBlock{
+      display: grid;
+      grid-template-columns: 90%;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import Infoblock, {Block} from "../Components/Infoblock.tsx";
 import Union from "../public/images/Union.svg"
+import useWindowSize from "../hooks/useWindowSize.ts";
 
 
 const problemBlock:Block[] = [
@@ -57,8 +58,8 @@ const decisionBlock:Block[] = [
     }
 ]
 
-
 export default function Triager() {
+    const {width} = useWindowSize()
     return(
         <main className="Triager">
             <h2>Triager</h2>
@@ -75,11 +76,11 @@ export default function Triager() {
                     <div className="Triager__TechnologyBlock-left">
                         <div>
                             <img src={Union} alt=""/>
-                            <p><b>в 4 раза</b><br/> сокращение времени обработки<br/> 100 входящих сообщений</p>
+                            <p><b>в 4 раза</b><br/> сокращение времени обработки{width >768 && <br/>} 100 входящих сообщений</p>
                         </div>
                         <div>
                             <img src={Union} alt=""/>
-                            <p><b>до 6%</b><br/> снижение вероятности<br/> ошибочной сортировки</p>
+                            <p><b>до 6%</b><br/> снижение вероятности{width >768 && <br/>} ошибочной сортировки</p>
                         </div>
                         <div>
                             <img src={Union} alt=""/>
@@ -87,7 +88,7 @@ export default function Triager() {
                         </div>
                         <div>
                             <img src={Union} alt=""/>
-                            <p><b>в 10 раз</b><br/> сокращение расходов <br/> на сортировку в месяц</p>
+                            <p><b>в 10 раз</b><br/> сокращение расходов {width >768 && <br/>} на сортировку в месяц</p>
                         </div>
                     </div>
                     <div className="Triager__TechnologyBlock-right">
