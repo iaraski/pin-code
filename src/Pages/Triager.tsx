@@ -88,7 +88,7 @@ export default function Triager() {
                         </div>
                         <div>
                             <img src={Union} alt=""/>
-                            <p><b>в 10 раз</b><br/> сокращение расходов {width >768 && <br/>} на сортировку в месяц</p>
+                            <p><b>в 10 раз</b><br/> сокращение расходов {width >    768 && <br/>} на сортировку в месяц</p>
                         </div>
                     </div>
                     <div className="Triager__TechnologyBlock-right">

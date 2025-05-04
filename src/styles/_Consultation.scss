@@ -1,5 +1,5 @@
 .Consultation {
-  height: 160vh;
+  height: 120vh;
   width: 100%;
   &__form{
     width: 43%;
@@ -35,6 +35,14 @@
     }
     input, textarea{
       border: 1px solid #939393;
+    }
+  }
+}
+@media(max-width: 768px){
+  .Consultation{
+    height: 140vh;
+    &__form{
+      width: 90%;
     }
   }
 }

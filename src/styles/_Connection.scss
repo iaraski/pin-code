@@ -1,7 +1,10 @@
 .connection{
   width: 100%;
-  height: 160vh;
+  height: 120vh;
   background-color: white;
+  h2{
+    color: black!important;
+  }
   &_info{
 
     &_links{
@@ -31,12 +34,11 @@
       overflow: auto;
       margin-bottom: 5%;
       height: 30%;
+      padding:4%;
       font-family: Evolventa, sans-serif;
       &::placeholder{
         font-family: Evolventa, sans-serif;
         font-size: 0.9375rem;
-        padding-top: 20px; /* Сдвигает текст вниз */
-        padding-left: 4%; /* Сдвигает текст вправо */
       }
     }
     input{
@@ -73,6 +75,7 @@
       width: fit-content;
       p{
         text-align: center;
+        font-size: 1.8rem;
       }
       &_links{
         justify-content: center;

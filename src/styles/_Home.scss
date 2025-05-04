@@ -193,7 +193,7 @@
     }
     &__processes{
       height:auto;
-      padding-bottom:10%;
+      padding-bottom:15%;
       .p1{
         height:5%;
         margin-top:0;
@@ -204,7 +204,7 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      gap: 2%;
+      gap: 5%;
     }
     &__horizontal_card{
       height: auto;
@@ -214,7 +214,6 @@
       &__info{
         align-items: center;
         width: 90%;
-
       }
     }
   }

@@ -19,8 +19,8 @@ export default function Footer() {
                     <p>pincodpinpin8@gmail.com</p>
                 </div>
                 <div className="Footer__connection__2">
-                    <a href="#"><img src={tgLogoGrey} alt=""/></a>
-                    <a href="#"><img src={vkLogoGrey} alt=""/></a>
+                    <a href="https://t.me/pinpincod"><img src={tgLogoGrey} alt=""/></a>
+                    <a href="https://vk.com/pinpincod"><img src={vkLogoGrey} alt=""/></a>
                 </div>
             </div>
             <img className="Footer__sponsorsLogo" src={sponsorsLogo} alt=""/>

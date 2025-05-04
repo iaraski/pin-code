@@ -13,8 +13,8 @@ export default function Connection () {
                     <p>8 996 127-60-15</p>
                     <p>pincodpinpin8@gmail.com</p>
                     <div className="connection_info_links">
-                        <a href="#"><img src={tgImage} alt=""/></a>
-                        <a href="#"><img src={vkImage} alt=""/></a>
+                        <a href="https://t.me/pinpincod"><img src={tgImage} alt=""/></a>
+                        <a href="https://vk.com/pinpincod"><img src={vkImage} alt=""/></a>
                     </div>
                 </div>
                 <div className="connection_form">

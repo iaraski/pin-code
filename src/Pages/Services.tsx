@@ -17,18 +17,18 @@ export default function Services() {
                         Если у вас возникают вопросы по существующему{width <=768 ? <br/>:""} продукту/идея продукта, можно обратиться к нам
                     </p>
                 </div>
-                <button className="button_white">
-                    <Link to={`/services/consultation/consultation`}>Заказать</Link>
-                </button>
+                <Link to ={`/services/consultation/development`}>
+                    <button className="button_white">Заказать</button>
+                </Link>
             </div>
             <div className="Services__block">
                 <div>
                     <h4>Разработка проекта</h4>
                     <p>Мы предоставляем возможность разработки продукта/MVP{width <=768 ? <br/>:""} и технической документации к нему</p>
                 </div>
-                <button className="button_white">
-                    <Link to={`/services/consultation/development`}>Заказать</Link>
-                </button>
+                <Link to ={`/services/consultation/development`}>
+                    <button className="button_white">Заказать</button>
+                </Link>
             </div>
             <div className="Services__block">
                 <div>
@@ -37,9 +37,9 @@ export default function Services() {
                         Если существует уже решение/продукт, но есть проблемы{width <=768 ? <br/>:""} с внедрением его в организацию
                     </p>
                 </div>
-                <button className="button_white">
-                    <Link to={`/services/consultation/integration`}>Заказать</Link>
-                </button>
+                <Link to ={`/services/consultation/development`}>
+                    <button className="button_white">Заказать</button>
+                </Link>
             </div>
         </main>
     );
