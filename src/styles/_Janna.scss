@@ -22,3 +22,10 @@ position: relative;
     }
   }
 }
+@media(max-width: 768px){
+  .Janna{
+    &__numAndLine{
+      top:66.2%;
+    }
+  }
+}

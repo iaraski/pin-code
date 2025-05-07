@@ -40,9 +40,15 @@
 }
 @media(max-width: 768px){
   .Consultation{
-    height: 140vh;
+    height: auto;
+    margin-bottom:10%;
     &__form{
       width: 90%;
+      height: auto;
+      textarea{
+        height: 100px;
+      }
+
     }
   }
 }

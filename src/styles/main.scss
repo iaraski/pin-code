@@ -93,6 +93,7 @@ a{
   border:1px solid $btn-colors;
   transition: all .5s;
   color: white;
+  cursor: pointer;
   &:hover{
     background-color: white;
     color:$btn-colors;
