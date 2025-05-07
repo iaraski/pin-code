@@ -38,6 +38,28 @@
         "a b"
         "a b";
 }
+@media(max-width: 768px){
+  .DynamicGrid[data-blocks-count="2"]{
+    grid-template-areas:
+      "a a"
+      "b b";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.6fr;
+    height: 140vh;
+    padding-bottom:15%;
+    padding-top:15%;
+  }
+  .DynamicGrid[data-blocks-count="2"] .DynamicGrid__numAndLine{
+    top:7%!important;
+    left:9%!important;
+  }
+  .DynamicGrid[data-blocks-count="2"] .DynamicGrid__item{
+    height: 100%!important;
+    div:has(h3){
+      margin-top:4%;
+    }
+  }
+}
 .DynamicGrid--alternative[data-blocks-count="2"]{
   grid-template-areas:
     "a b";
@@ -97,7 +119,6 @@
   left:5%;
   top:19%
 }
-/* Явное указание пути к вложенному селектору */
 .DynamicGrid[data-blocks-count="2"] .DynamicGrid__item {
   width: 100%;
   height: 70%;
@@ -306,6 +327,42 @@
         "b b e f";
   grid-template-columns: 23% 22% 22% 22%;
 }
+@media (max-width: 768px) {
+  .DynamicGrid[data-blocks-count="6"] {
+    height: 140vh;
+    grid-template-areas:
+  "a a"
+  "b b"
+  "b b"
+  "c d"
+  "c d"
+  "e f"
+  "e f";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .DynamicGrid[data-blocks-count="6"] .DynamicGrid {
+
+    &__numAndLine{
+      top:0;
+      left:7.4%;
+    }
+
+  }
+.DynamicGrid[data-blocks-count="6"] .DynamicGrid__item{
+  &.a{
+    div:has(h3){
+      width:100%;
+    }
+    h3{
+      margin-left:0!important;
+    }
+  }
+  &.f{
+    grid-area: f;
+  }
+}
+}
 .DynamicGrid[data-blocks-count="6"] .DynamicGrid{
   &__item{
     &.a{
@@ -406,6 +463,17 @@
     }
     p{
       margin-top:2%
+    }
+  }
+}
+@media(max-width: 768px){
+  .DynamicGrid__item, .DynamicGrid--alternative__item{
+    height: 100%;
+    h3{
+      font-size: 1.33rem!important;
+    }
+    p{
+      font-size: 1rem!important;
     }
   }
 }

@@ -60,7 +60,7 @@
   }
   &__processes{
     width: 100%;
-    height: 120vh;
+    height: auto;
     background-color:$background-color;
     position: relative;
     display: flex;
@@ -78,12 +78,11 @@
     justify-content: center;
     margin: auto auto 5% auto;
     gap: 10% 5%;
-    height: 90%;
   }
   &__horizontal_card{
     background-color: white;
     border-radius: 30px;
-    height: 100%;
+    height:auto;
     &__info{
       margin-left: 5%;
       margin-bottom:5%;
@@ -215,6 +214,13 @@
         align-items: center;
         width: 90%;
       }
+    }
+  }
+}
+@media(max-width: 320px){
+  .Home{
+    &__processes{
+      padding-bottom: 25%;
     }
   }
 }

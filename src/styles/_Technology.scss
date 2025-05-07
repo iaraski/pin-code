@@ -35,7 +35,7 @@
       width: 100%;
     }
   }
-  &.a,
+    &.a,
   &.b{
     margin-bottom:10%;
   }
@@ -47,6 +47,7 @@
     display:flex;
     justify-content: flex-start;
     margin-left:1%;
+    margin-top:12%;
   }
 }
 &__item{
@@ -59,11 +60,21 @@
     margin-left:5%;
   }
   h4{
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
   p{
-    font-size:20px;
+    font-size:1.25rem;
   }
 }
-
+}
+@media(max-width: 768px){
+  .Technology{
+    height:150vh;
+    grid-template-columns: 90%;
+    &__item{
+      justify-content: flex-start!important;
+      margin-bottom:8% !important;
+      margin-top:0!important;
+    }
+  }
 }
