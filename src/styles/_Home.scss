@@ -178,6 +178,9 @@
 
 @media(max-width:768px){
   .Home{
+    &__block{
+      height: 60vh;
+    }
     &__briefcase{
       &__cards{
         flex-direction: column;

@@ -11,7 +11,7 @@ export default function Header(){
     const {width} = useWindowSize();
     return (
         <header className="Header">
-            {width > 768 && <>
+            {width > 1000 && <>
                 <nav className="nav nav__1">
                     <Link to="/portfolio" className={activeLink === "portfolio" ? "active" : ""}
                           onClick={() => handleLinkClick("portfolio")}>Портфолио</Link>
@@ -31,7 +31,7 @@ export default function Header(){
                           onClick={() => handleLinkClick("company")}>О компании</Link>
                 </nav>
             </>}
-            {width <= 768 && <>
+            {width <= 1000 && <>
                 <Link to = ""><img src={logo} alt=""/></Link>
                 <nav>
                 <Link to="/portfolio" className={activeLink === "portfolio" ? "active" : ""}
