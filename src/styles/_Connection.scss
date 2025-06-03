@@ -1,7 +1,8 @@
 .connection{
   width: 100%;
-  height: 120vh;
+  height: auto;
   background-color: white;
+  padding: 4rem;
   h2{
     color: black!important;
   }
@@ -10,11 +11,11 @@
     &_links{
       display: flex;
       flex-direction: row;
-      gap: 2%;
+      gap: 1rem;
     }
     p{
       font-size: 2.1785rem;
-      margin-bottom: 1%;
+      margin-bottom: 0.5rem;
     }
   }
   &_form{
@@ -33,8 +34,8 @@
       resize: none;
       overflow: auto;
       margin-bottom: 5%;
-      height: 30%;
-      padding:4%;
+      height: 8rem;
+      padding:2rem;
       font-family: Evolventa, sans-serif;
       &::placeholder{
         font-family: Evolventa, sans-serif;
@@ -43,8 +44,8 @@
     }
     input{
       width: 100%;
-      padding: 4%;
-      margin-bottom: 6%;
+      padding: 1rem;
+      margin-bottom: 1rem;
       &::placeholder{
         font-family: Evolventa, sans-serif;
         font-size: 0.9375rem;

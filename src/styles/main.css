@@ -193,7 +193,7 @@ h2 {
 }
 .Home__connection {
   width: 100%;
-  height: 40rem;
+  height: auto;
   background-color: white;
 }
 .Home__connection_info_links {
@@ -271,7 +271,7 @@ h2 {
 }
 .Home__horizontal_card__info {
   margin-left: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 2rem;
 }
 .Home__horizontal_card__info p {
   font-size: 0.75rem;
@@ -363,14 +363,13 @@ h2 {
   }
   .Home__briefcase__card {
     width: 100%;
-    margin-bottom: 5%;
+    margin-bottom: 2rem;
   }
   .Home__briefcase__card h4, .Home__briefcase__card p {
     text-align: center;
   }
   .Home__processes {
     height: auto;
-    padding-bottom: 15%;
   }
   .Home__processes .p1 {
     height: 5%;
@@ -381,22 +380,14 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 5%;
-  }
-  .Home__horizontal_card {
-    height: 12rem;
+    gap: 2rem;
   }
   .Home__horizontal_card h3 {
-    margin-bottom: 1%;
+    margin-bottom: 0.5rem;
   }
   .Home__horizontal_card__info {
     align-items: center;
     width: 90%;
-  }
-}
-@media (max-width: 320px) {
-  .Home__processes {
-    padding-bottom: 25%;
   }
 }
 .Footer {
@@ -544,8 +535,9 @@ h2 {
 
 .connection {
   width: 100%;
-  height: 120vh;
+  height: auto;
   background-color: white;
+  padding: 4rem;
 }
 .connection h2 {
   color: black !important;
@@ -553,11 +545,11 @@ h2 {
 .connection_info_links {
   display: flex;
   flex-direction: row;
-  gap: 2%;
+  gap: 1rem;
 }
 .connection_info p {
   font-size: 2.1785rem;
-  margin-bottom: 1%;
+  margin-bottom: 0.5rem;
 }
 .connection_form {
   width: 43%;
@@ -576,8 +568,8 @@ h2 {
   resize: none;
   overflow: auto;
   margin-bottom: 5%;
-  height: 30%;
-  padding: 4%;
+  height: 8rem;
+  padding: 2rem;
   font-family: Evolventa, sans-serif;
 }
 .connection_form textarea::placeholder {
@@ -586,8 +578,8 @@ h2 {
 }
 .connection_form input {
   width: 100%;
-  padding: 4%;
-  margin-bottom: 6%;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 .connection_form input::placeholder {
   font-family: Evolventa, sans-serif;
@@ -1133,7 +1125,7 @@ h2 {
   width: 100%;
 }
 .Technology__item:has(h3) h3 {
-  width: 10%;
+  width: 15%;
   text-align: center;
   border: 2px solid black;
   border-radius: 50%;
