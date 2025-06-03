@@ -85,16 +85,19 @@ export default function Janna(){
     return(
         <main className="Janna">
             <h2>Жанна</h2>
-            <div className="Janna__numAndLine">
-                <div></div>
-                <p>03</p>
-            </div>
+
             <p className="p1">Робот-администратор</p>
             <Infoblock blocks={ProblemBlock} color="white" backgroundColor="#292929"/>
             <Infoblock blocks={desicionProblemBlock} color="white" backgroundColor="#6254e6"
                        backgroundColorBlock="#292929"/>
-            <h2>Технологии</h2>
-            <Technology blocks={technologyBlock} className="Technology"/>
+            <div style={{position: "relative"}}>
+                <div className="Janna__numAndLine">
+                    <div></div>
+                    <p>03</p>
+                </div>
+                <h2>Технологии</h2>
+                <Technology blocks={technologyBlock} className="Technology"/>
+            </div>
         </main>
     )
 }

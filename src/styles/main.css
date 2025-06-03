@@ -161,7 +161,7 @@ h2 {
   height: 60%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .Header {
     display: flex;
     flex-direction: column;
@@ -174,7 +174,7 @@ h2 {
   .Header nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     margin: auto;
     gap: 5%;
@@ -193,7 +193,7 @@ h2 {
 }
 .Home__connection {
   width: 100%;
-  height: 120vh;
+  height: 40rem;
   background-color: white;
 }
 .Home__connection_info_links {
@@ -261,13 +261,13 @@ h2 {
   grid-template-rows: 1fr 1fr;
   width: 93%;
   justify-content: center;
-  margin: auto auto 5% auto;
+  margin: auto auto 7% auto;
   gap: 10% 5%;
 }
 .Home__horizontal_card {
   background-color: white;
   border-radius: 30px;
-  height: auto;
+  height: 12rem;
 }
 .Home__horizontal_card__info {
   margin-left: 5%;
@@ -317,12 +317,12 @@ h2 {
   margin: auto;
 }
 .Home__block {
-  height: 100vh;
+  height: 40rem;
   width: 100vw;
   background-color: #292929;
 }
 .Home__block .background {
-  background-color: #6254e6;
+  background-image: url("../public/images/bg.svg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -356,7 +356,7 @@ h2 {
 
 @media (max-width: 768px) {
   .Home__block {
-    height: 60vh;
+    height: 40rem;
   }
   .Home__briefcase__cards {
     flex-direction: column;
@@ -384,7 +384,7 @@ h2 {
     gap: 5%;
   }
   .Home__horizontal_card {
-    height: auto;
+    height: 12rem;
   }
   .Home__horizontal_card h3 {
     margin-bottom: 1%;
@@ -417,7 +417,7 @@ h2 {
 .Footer__navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 90%;
   margin: auto auto auto;
 }
@@ -517,7 +517,7 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   width: 93%;
-  height: 55vh;
+  height: 20rem;
   margin: auto auto 5% auto;
 }
 .HorizontalCard__content {
@@ -542,11 +542,6 @@ h2 {
   margin: auto 6% 4% auto;
 }
 
-@media (max-height: 1180px) and (min-height: 767px) {
-  .HorizontalCard {
-    height: 20vh;
-  }
-}
 .connection {
   width: 100%;
   height: 120vh;
@@ -683,7 +678,7 @@ h2 {
   position: relative;
   display: grid;
   gap: 3.5%;
-  height: 120vh;
+  height: 50rem;
   padding: 2%;
   margin: auto;
   justify-content: center;
@@ -723,12 +718,12 @@ h2 {
     grid-template-areas: "a a" "b b";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.6fr;
-    height: 140vh;
+    height: auto;
     padding-bottom: 15%;
     padding-top: 15%;
   }
   .DynamicGrid[data-blocks-count="2"] .DynamicGrid__numAndLine {
-    top: 7% !important;
+    top: 5% !important;
     left: 9% !important;
   }
   .DynamicGrid[data-blocks-count="2"] .DynamicGrid__item {
@@ -795,9 +790,27 @@ h2 {
 
 .DynamicGrid--alternative[data-blocks-count="3"] .DynamicGrid--alternative__numAndLine {
   left: 5%;
-  top: 19%;
+  top: 21%;
 }
 
+@media (max-width: 768px) {
+  .DynamicGrid--alternative[data-blocks-count="3"] {
+    grid-template-areas: "a a" "b b" "c c" "c c" !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    height: auto;
+  }
+  .DynamicGrid--alternative[data-blocks-count="3"] .DynamicGrid--alternative__numAndLine {
+    left: 8%;
+    top: 5%;
+  }
+  .DynamicGrid--alternative[data-blocks-count="3"] .DynamicGrid--alternative__item {
+    height: 100% !important;
+  }
+  .DynamicGrid--alternative[data-blocks-count="3"] .DynamicGrid--alternative__item.a h3 {
+    margin-top: 4%;
+  }
+}
 .DynamicGrid[data-blocks-count="2"] .DynamicGrid__item {
   width: 100%;
   height: 70%;
@@ -851,7 +864,7 @@ h2 {
     margin-top: 10%;
   }
   .DynamicGrid[data-blocks-count="3"] {
-    height: 140vh;
+    height: 50rem;
     padding-top: 5%;
     padding-bottom: 5%;
     margin-top: 5%;
@@ -910,7 +923,7 @@ h2 {
   grid-area: a;
   margin: auto auto 0 auto;
   font-size: 2.1875rem;
-  height: 67.5%;
+  height: 62.5%;
 }
 .DynamicGrid--alternative[data-blocks-count="3"] .DynamicGrid--alternative__item.a h3 {
   margin-top: 5%;
@@ -920,6 +933,7 @@ h2 {
   margin-top: 0;
   font-size: 2rem;
   padding: 0 5% 0 5%;
+  height: 63.5%;
 }
 .DynamicGrid--alternative[data-blocks-count="3"] .DynamicGrid--alternative__item.b div:has(h3) {
   width: 100%;
@@ -927,10 +941,12 @@ h2 {
 }
 .DynamicGrid--alternative[data-blocks-count="3"] .DynamicGrid--alternative__item.b div:has(h3) h3 {
   text-align: start;
-  line-height: 40px;
 }
 .DynamicGrid--alternative[data-blocks-count="3"] .DynamicGrid--alternative__item.c {
   grid-area: c;
+  height: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
   margin: auto;
 }
 .DynamicGrid--alternative[data-blocks-count="3"] .DynamicGrid--alternative__item.c p {
@@ -950,11 +966,11 @@ h2 {
 
 @media (max-width: 768px) {
   .DynamicGrid[data-blocks-count="5"] {
-    height: auto;
+    height: 50rem;
     margin-bottom: 5%;
     margin-top: 5%;
     gap: 5%;
-    width: 85%;
+    width: 90%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "a a" "b c" "d e";
@@ -1053,7 +1069,7 @@ h2 {
 
 /* Стили для блоков */
 .DynamicGrid__item, .DynamicGrid--alternative__item {
-  border-radius: 30px;
+  border-radius: 40px;
   height: 70%;
   padding: 5%;
   width: 100%;
@@ -1167,111 +1183,98 @@ h2 {
 
 @media (max-width: 768px) {
   .Technology {
-    height: 150vh;
+    height: auto;
+    gap: 2rem;
     grid-template-columns: 90%;
+    grid-template-areas: "a" "c" "e" "b" "d";
   }
   .Technology__item {
     justify-content: flex-start !important;
     margin-bottom: 8% !important;
     margin-top: 0 !important;
+    height: auto;
+  }
+  .Technology__item.a {
+    grid-area: a;
+  }
+  .Technology__item.b {
+    grid-area: b;
+  }
+  .Technology__item.c {
+    grid-area: c;
+  }
+  .Technology__item.d {
+    grid-area: d;
+  }
+  .Technology__item.e {
+    grid-area: e;
   }
 }
-.Triager__TechnologyBlock {
-  position: relative;
+.Triager {
+  height: auto;
   width: 100%;
-  height: 130vh;
+}
+.Triager__TechnologyBlock {
+  height: auto;
+  padding-bottom: 5rem;
+  position: relative;
 }
 .Triager__TechnologyBlock-left {
-  display: grid;
-  row-gap: 20%;
-}
-.Triager__TechnologyBlock-left img {
-  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 .Triager__TechnologyBlock-left div {
   display: flex;
   flex-direction: row;
-  height: fit-content;
+  margin-left: 3rem;
 }
-.Triager__TechnologyBlock-left div p {
-  margin-left: 2%;
-  height: fit-content;
+.Triager__TechnologyBlock-left div img {
+  height: 4.5rem;
+  margin-right: 1rem;
 }
 .Triager__TechnologyBlock-right {
-  display: grid;
-  row-gap: 10%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 3rem;
+}
+.Triager__TechnologyBlock-right div {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  justify-content: flex-end;
-  height: auto;
 }
 .Triager__TechnologyBlock-right__underline {
   border-top: 2px solid black;
   width: 50%;
   margin: auto;
 }
-.Triager__TechnologyBlock-right h3 {
-  margin-bottom: 4%;
-}
 .Triager__TechnologyBlock__numAndLine {
   position: absolute;
-  left: 5%;
-  top: 9%;
   display: flex;
   flex-direction: row;
-}
-.Triager__TechnologyBlock__numAndLine p {
-  margin-left: 5px;
-  font-size: 0.9375rem;
+  left: 5%;
+  top: 8%;
 }
 .Triager__TechnologyBlock__numAndLine div {
   border-top: 2px solid black;
-  width: 45px;
-  display: flex;
-  align-items: center;
-  margin: auto;
+  width: 3rem;
+  margin: auto 0.5rem auto auto;
+}
+.Triager__TechnologyBlock__numAndLine div p {
+  font-weight: bold;
 }
 .Triager__TechnologyLeftRightBlock {
   display: grid;
-  grid-template-columns: 45% 45%;
-  margin: auto;
-  justify-content: center;
-}
-.Triager .p1 {
-  margin-bottom: 0;
-  width: 70%;
+  grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 426px) {
-  .Triager__TechnologyBlock {
-    height: 170vh !important;
-  }
-}
-@media (max-width: 320px) {
-  .Triager__TechnologyBlock {
-    height: 190vh !important;
-  }
-}
 @media (max-width: 768px) {
-  .Triager {
-    height: auto;
-  }
-  .Triager__TechnologyBlock {
-    height: 190vh;
-  }
   .Triager__TechnologyBlock__numAndLine {
-    top: 2.5%;
-  }
-  .Triager__TechnologyBlock-left {
-    row-gap: 6%;
-  }
-  .Triager__TechnologyBlock-right {
-    margin-top: 10%;
-    justify-content: center;
+    top: 2%;
   }
   .Triager__TechnologyLeftRightBlock {
-    display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 .Janna {
@@ -1283,7 +1286,7 @@ h2 {
 .Janna__numAndLine {
   position: absolute;
   left: 7%;
-  top: 70%;
+  top: 10%;
   display: flex;
   flex-direction: row;
 }
@@ -1301,7 +1304,8 @@ h2 {
 
 @media (max-width: 768px) {
   .Janna__numAndLine {
-    top: 66.2%;
+    top: 3%;
+    left: 4%;
   }
 }
 .Kastel {
@@ -1312,14 +1316,15 @@ h2 {
 }
 .Kastel__numAndLine {
   position: absolute;
-  left: 8%;
-  top: 70%;
+  left: 3%;
+  top: 4%;
   display: flex;
   flex-direction: row;
 }
 .Kastel__numAndLine p {
   margin-left: 5px;
   font-size: 0.9375rem;
+  font-weight: bold;
 }
 .Kastel__numAndLine div {
   border-top: 2px solid black;
@@ -1344,12 +1349,12 @@ h2 {
 .Consultation {
   height: auto;
   width: 100%;
-  padding-bottom: 15%;
+  padding-bottom: 4rem;
 }
 .Consultation__form {
   width: 43%;
   margin: auto;
-  height: 70%;
+  height: 32rem;
   display: flex;
   flex-direction: column;
 }
@@ -1386,7 +1391,6 @@ h2 {
 @media (max-width: 768px) {
   .Consultation {
     height: auto;
-    margin-bottom: 10%;
   }
   .Consultation__form {
     width: 90%;

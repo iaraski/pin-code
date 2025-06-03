@@ -67,20 +67,21 @@ export default function Triager() {
             <Infoblock blocks={problemBlock} backgroundColor="#292929" color ="white" />
             <Infoblock blocks={decisionBlock} backgroundColor="#6254e6" color ="white" backgroundColorBlock="#292929"/>
             <div className="Triager__TechnologyBlock">
-                <h2>Технологии</h2>
                 <div className="Triager__TechnologyBlock__numAndLine">
                     <div></div>
                     <p>03</p>
                 </div>
+                <h2>Технологии</h2>
                 <div className="Triager__TechnologyLeftRightBlock">
                     <div className="Triager__TechnologyBlock-left">
                         <div>
                             <img src={Union} alt=""/>
-                            <p><b>в 4 раза</b><br/> сокращение времени обработки{width >768 && <br/>} 100 входящих сообщений</p>
+                            <p><b>в 4 раза</b><br/> сокращение времени обработки{width > 768 && <br/>} 100 входящих
+                                сообщений</p>
                         </div>
                         <div>
                             <img src={Union} alt=""/>
-                            <p><b>до 6%</b><br/> снижение вероятности{width >768 && <br/>} ошибочной сортировки</p>
+                            <p><b>до 6%</b><br/> снижение вероятности{width > 768 && <br/>} ошибочной сортировки</p>
                         </div>
                         <div>
                             <img src={Union} alt=""/>
@@ -88,7 +89,7 @@ export default function Triager() {
                         </div>
                         <div>
                             <img src={Union} alt=""/>
-                            <p><b>в 10 раз</b><br/> сокращение расходов {width >    768 && <br/>} на сортировку в месяц</p>
+                            <p><b>в 10 раз</b><br/> сокращение расходов {width > 768 && <br/>} на сортировку в месяц</p>
                         </div>
                     </div>
                     <div className="Triager__TechnologyBlock-right">

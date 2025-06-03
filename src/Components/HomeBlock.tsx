@@ -1,7 +1,6 @@
 
 
 
-
 export default function HomeBlock() {
     return (
         <div className="Home__block">

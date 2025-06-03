@@ -9,9 +9,7 @@ export default function Footer() {
             <nav className="Footer__navigation">
                 <Link to="/company">О компании</Link>
                 <Link to="/services">Услуги</Link>
-                <Link to="/products">Продукты</Link>
                 <Link to="/portfolio">Портфолио</Link>
-                <Link to="/blog">Блог</Link>
             </nav>
             <div className="Footer__connection">
                 <div className="Footer__connection__1">

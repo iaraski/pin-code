@@ -6,7 +6,7 @@ position: relative;
   &__numAndLine{
     position: absolute;
     left:7%;
-    top:70%;
+    top:10%;
     display: flex;
     flex-direction: row;
     p{
@@ -25,7 +25,8 @@ position: relative;
 @media(max-width: 768px){
   .Janna{
     &__numAndLine{
-      top:66.2%;
+      top:3%;
+      left:4%
     }
   }
 }

@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   gap: 3.5%;
-  height: 120vh;
+  height: 50rem;
   padding:2%;
   margin: auto;
   justify-content: center;
@@ -45,12 +45,12 @@
       "b b";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.6fr;
-    height: 140vh;
+    height: auto;
     padding-bottom:15%;
     padding-top:15%;
   }
   .DynamicGrid[data-blocks-count="2"] .DynamicGrid__numAndLine{
-    top:7%!important;
+    top:5%!important;
     left:9%!important;
   }
   .DynamicGrid[data-blocks-count="2"] .DynamicGrid__item{
@@ -96,10 +96,12 @@
     "a"
     "b";
   }
-  .DynamicGrid--alternative[data-blocks-count="2"] .DynamicGrid--alternative__item{
-    height: 100%;
-    p{
-      font-size:1rem;
+  .DynamicGrid--alternative[data-blocks-count="2"] .DynamicGrid--alternative{
+    &__item{
+      height: 100%;
+      p{
+        font-size:1rem;
+      }
     }
   }
 }
@@ -117,7 +119,35 @@
 }
 .DynamicGrid--alternative[data-blocks-count="3"] .DynamicGrid--alternative__numAndLine{
   left:5%;
-  top:19%
+  top:21%
+}
+@media (max-width: 768px) {
+  .DynamicGrid--alternative[data-blocks-count="3"]{
+    grid-template-areas:
+    "a a"
+    "b b"
+    "c c"
+    "c c"!important;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    height: auto;
+
+  }
+
+  .DynamicGrid--alternative[data-blocks-count="3"] .DynamicGrid--alternative{
+    &__numAndLine{
+      left:8%;
+      top:5%
+    }
+    &__item{
+      height: 100% !important;
+      &.a{
+        h3{
+          margin-top:4%;
+        }
+      }
+    }
+  }
 }
 .DynamicGrid[data-blocks-count="2"] .DynamicGrid__item {
   width: 100%;
@@ -178,7 +208,7 @@
     margin-top: 10%;
   }
   .DynamicGrid[data-blocks-count="3"] {
-    height: 140vh;
+    height: 50rem;
     padding-top:5%;
     padding-bottom:5%;
     margin-top:5%;
@@ -244,7 +274,7 @@
       grid-area: a;
       margin: auto auto 0 auto;
       font-size: 2.1875rem;
-      height: 67.5%;
+      height: 62.5%;
       h3{
         margin-top: 5%;
       }
@@ -254,17 +284,20 @@
       margin-top: 0;
       font-size: 2rem;
       padding: 0 5% 0 5%;
+      height: 63.5%;
       div:has(h3){
         width: 100%;
         padding:0;
         h3{
           text-align: start;
-          line-height:40px;
         }
       }
     }
     &.c{
       grid-area: c;
+      height: auto;
+      padding-top: 10%;
+      padding-bottom: 10%;
       margin:auto ;
       p{
         font-size: 1.625rem;
@@ -289,11 +322,11 @@
 }
 @media(max-width: 768px){
   .DynamicGrid[data-blocks-count="5"]{
-    height: auto;
+    height: 50rem;
     margin-bottom: 5%;
     margin-top:5%;
     gap:5%;
-    width: 85%;
+    width: 90%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
@@ -426,7 +459,7 @@
 
 /* Стили для блоков */
 .DynamicGrid__item, .DynamicGrid--alternative__item {
-  border-radius: 30px;
+  border-radius: 40px;
   height: 70%;
   padding:5%;
   width:100%;

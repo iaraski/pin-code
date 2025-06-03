@@ -5,10 +5,10 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 93%;
-  height: 55vh;
-
-
+  height: 20rem;
   margin:auto auto 5% auto;
+
+
   &__content{
     display: flex;
     flex-direction: column;
@@ -29,10 +29,5 @@
       width: fit-content;
       margin: auto 6% 4%  auto;
     }
-  }
-}
-@media(max-height: 1180px)and (min-height: 767px){
-  .HorizontalCard{
-    height: 20vh;
   }
 }

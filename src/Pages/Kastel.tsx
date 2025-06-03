@@ -49,11 +49,11 @@ const desicionProblem:Block[] =[
         content:(
             <ul>
                 <li>
-                    Создание и разработка онлайн-платформы, включающее в себя маршруты, подобранные по критериям пользователей;
+                    <b>Создание и разработка</b> <br/> онлайн-платформы, включающее <br/> в себя маршруты, подобранные <br/> по критериям пользователей;
                 </li>
-                <li>Прописывание культурной ценности в каждом объекте, представленном в маршруте;</li>
-                <li>Сортировка каждой достопримечательности по критериям;</li>
-                <li>Публикация новых маршрутов в социальных сетях для обсуждения с целевой аудиторией.</li>
+                <li>Прописывание культурной ценности <br/> в <b>каждом</b> объекте, представленном <br/> в маршруте;</li>
+                <li>Сортировка каждой <br/> достопримечательности по критериям;</li>
+                <li>Публикация <b>новых</b> маршрутов <br/> в социальных сетях для обсуждения <br/> с целевой аудиторией.</li>
             </ul>
         )
     }
@@ -115,12 +115,14 @@ export default function Kastel(){
             <p className="p1">Туристическая онлайн-платформа</p>
             <Infoblock blocks={Problemblocks} layout="alternative" backgroundColor="#292929" color="white"/>
             <Infoblock blocks={desicionProblem} backgroundColorBlock="#292929" color="white" backgroundColor="#6254e6"/>
-            <h2>Наш путь развития</h2>
-            <div className="Kastel__numAndLine">
-                <div></div>
-                <p>03</p>
+            <div style={{position: "relative"}}>
+                <div className="Kastel__numAndLine">
+                    <div></div>
+                    <p>03</p>
+                </div>
+                <h2>Наш путь развития</h2>
+                <Technology className="Technology" blocks={technologyBlock}/>
             </div>
-            <Technology className="Technology" blocks={technologyBlock}/>
         </main>
     )
 }
