@@ -623,6 +623,11 @@ h2 {
     width: 90%;
   }
 }
+@media (max-width: 400px) {
+  .connection_info p {
+    font-size: 1.4rem;
+  }
+}
 .Services {
   width: 100%;
   height: 140vh;

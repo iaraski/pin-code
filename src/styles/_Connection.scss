@@ -92,3 +92,13 @@
     }
   }
 }
+
+@media(max-width: 400px){
+  .connection{
+    &_info{
+      p{
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
