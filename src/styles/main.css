@@ -791,7 +791,7 @@ h2 {
 }
 
 .DynamicGrid[data-blocks-count="2"] .DynamicGrid__item {
-  height: 30rem;
+  min-height: 30rem;
 }
 .DynamicGrid[data-blocks-count="2"] .DynamicGrid__item.a {
   background-size: cover;
@@ -800,6 +800,26 @@ h2 {
 }
 .DynamicGrid[data-blocks-count="2"] .DynamicGrid__item.b li {
   margin-left: 1.2rem;
+}
+
+.DynamicGrid--alternative[data-blocks-count="2"] {
+  grid-template-areas: "a b";
+  grid-template-columns: 45% 45%;
+}
+.DynamicGrid--alternative[data-blocks-count="2"] h3 {
+  font-size: 2.1875rem;
+}
+.DynamicGrid--alternative[data-blocks-count="2"] p {
+  font-size: 18px;
+}
+
+.DynamicGrid--alternative[data-blocks-count="2"] .DynamicGrid--alternative__item div {
+  padding-right: 5rem;
+  padding-left: 1.625rem;
+  margin-top: 2.5rem;
+}
+.DynamicGrid--alternative[data-blocks-count="2"] .DynamicGrid--alternative__item div h3 {
+  margin-bottom: 2rem;
 }
 
 .DynamicGrid[data-blocks-count="5"] {
@@ -883,6 +903,11 @@ h2 {
   .DynamicGrid--alternative[data-blocks-count="3"] {
     grid-template-columns: 86%;
     grid-template-areas: "a" "b" "c";
+  }
+  .DynamicGrid--alternative[data-blocks-count="2"] {
+    grid-template-columns: 90%;
+    grid-template-areas: "a" "b";
+    grid-template-rows: 1fr 1fr;
   }
   .DynamicGrid[data-blocks-count="2"] {
     grid-template-areas: "a" "b";
