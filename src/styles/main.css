@@ -575,7 +575,7 @@ h2 {
   overflow: auto;
   margin-bottom: 5%;
   height: 8rem;
-  padding: 2rem;
+  padding: 1rem;
   font-family: Evolventa, sans-serif;
 }
 .connection_form textarea::placeholder {
