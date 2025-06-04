@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import tgLogoGrey from "../public/images/tgLogoGrey.png"
 import vkLogoGrey from "../public/images/vkLogoGrey.png"
-import sponsorsLogo from "../public/images/sponsorsLogo.png"
+import sponsorsLogo from "../public/images/sponsorsLogo.svg"
 
 export default function Footer() {
     return(
