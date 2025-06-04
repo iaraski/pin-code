@@ -31,7 +31,7 @@ const problemBlock:Block[] = [
         content: "Затраты на сортировку"
     }
 ]
-const decisionBlock:Block[] = [
+const   decisionBlock:Block[] = [
     {
         id:"a",
         title:"Решение проблемы",

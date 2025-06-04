@@ -2,7 +2,7 @@
   width: 100%;
   height: auto;
   background-color: white;
-  padding: 4rem;
+  padding: 1rem;
   h2{
     color: black!important;
   }
@@ -58,7 +58,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin:auto;
-    gap:16%;
+    gap:2rem;
     height: auto;
 
   }
@@ -67,9 +67,7 @@
 @media(max-width: 768px){
   .connection{
     height:auto;
-    textarea{
-      height: 100px;
-    }
+
     &_info{
       margin:5% auto;
       justify-content: center;
@@ -88,17 +86,8 @@
     }
     &_info_and_form{
       flex-direction: column-reverse;
-      width: 90%;
+      width: 100%;
     }
   }
 }
 
-@media(max-width: 400px){
-  .connection{
-    &_info{
-      p{
-        font-size: 1.4rem;
-      }
-    }
-  }
-}
