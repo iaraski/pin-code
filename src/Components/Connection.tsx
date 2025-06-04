@@ -1,5 +1,5 @@
-import tgImage from "../public/images/tgImage.png"
-import vkImage from "../public/images/vkImage.png"
+import tgImage from "../public/images/tgImage.svg"
+import vkImage from "../public/images/vkImage.svg"
 
 
 export default function Connection () {
