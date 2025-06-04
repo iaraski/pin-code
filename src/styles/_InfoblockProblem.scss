@@ -1,512 +1,272 @@
-.DynamicGrid, .DynamicGrid--alternative {
-  position: relative;
-  display: grid;
-  gap: 3.5%;
-  height: 50rem;
-  padding:2%;
-  margin: auto;
-  justify-content: center;
-  &__line{
-    width: 45px !important;
-    border-top: 2px solid white;
-    align-items: center;
-    margin: auto !important;
-  }
-  &__numAndLine{
-    display: flex;
-    flex-direction: row !important;
-    position: absolute;
-    left:4.5%;
-    top:7%;
-    margin:0;
-    width:fit-content;
-    height: fit-content;
-    p{
-      margin-left:5px;
-      font-size: 0.9375rem !important;
-    }
-  }
-}
-
-/* Шаблоны сетки в зависимости от количества блоков */
-.DynamicGrid[data-blocks-count="1"] {
-  grid-template-areas: "a";
-}
-
-.DynamicGrid[data-blocks-count="2"] {
-  grid-template-areas:
-        "a b"
-        "a b";
-}
-@media(max-width: 768px){
-  .DynamicGrid[data-blocks-count="2"]{
-    grid-template-areas:
-      "a a"
-      "b b";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.6fr;
-    height: auto;
-    padding-bottom:15%;
-    padding-top:15%;
-  }
-  .DynamicGrid[data-blocks-count="2"] .DynamicGrid__numAndLine{
-    top:5%!important;
-    left:9%!important;
-  }
-  .DynamicGrid[data-blocks-count="2"] .DynamicGrid__item{
-    height: 100%!important;
-    div:has(h3){
-      margin-top:4%;
-    }
-  }
-}
-.DynamicGrid--alternative[data-blocks-count="2"]{
-  grid-template-areas:
-    "a b";
-  grid-template-columns:40% 40%;
-  gap:10%;
-  height: 100vh;
-}
-.DynamicGrid--alternative[data-blocks-count="2"] .DynamicGrid--alternative__item{
-  margin-top:0;
-  height: 80%;
-  div{
-    margin-top:0;
-  }
-  h3,p{
-    text-align: start;
-  }
-  h3{
-    font-size: 2.1875rem;
-    margin-bottom: 1%;
-  }
-  p{
-    font-size:18px;
-  }
-}
-@media(max-width: 768px){
-  .DynamicGrid--alternative[data-blocks-count="2"]{
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 5%;
-    padding-bottom: 10%;
-    width: 90%;
-    grid-template-areas:
-    "a"
-    "b";
-  }
-  .DynamicGrid--alternative[data-blocks-count="2"] .DynamicGrid--alternative{
-    &__item{
-      height: 100%;
-      p{
-        font-size:1rem;
-      }
-    }
-  }
-}
-
-.DynamicGrid[data-blocks-count="2"] {
-  display: grid;
-  grid-template-columns: 45% 45%;
-  gap: 6%;
-  justify-content: center;
-}
-.DynamicGrid[data-blocks-count="2"] .DynamicGrid__numAndLine{
-  position: absolute;
-  left:6%;
-  top:8%
-}
-.DynamicGrid--alternative[data-blocks-count="3"] .DynamicGrid--alternative__numAndLine{
-  left:5%;
-  top:21%
-}
-@media (max-width: 768px) {
-  .DynamicGrid--alternative[data-blocks-count="3"]{
-    grid-template-areas:
-    "a a"
-    "b b"
-    "c c"
-    "c c"!important;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 2fr;
-    height: auto;
-
-  }
-
-  .DynamicGrid--alternative[data-blocks-count="3"] .DynamicGrid--alternative{
-    &__numAndLine{
-      left:8%;
-      top:5%
-    }
-    &__item{
-      height: 100% !important;
-      &.a{
-        h3{
-          margin-top:4%;
-        }
-      }
-    }
-  }
-}
-.DynamicGrid[data-blocks-count="2"] .DynamicGrid__item {
+.DynamicGrid, .DynamicGrid--alternative{
+  position:relative;
   width: 100%;
-  height: 70%;
-  padding: 5%;
-  &.a,
-  &.b {
-    margin:auto;
-
-    div:has(h3){
-      width: 100%;
-    }
-    h3 {
-      text-align: start;
-      width: 100%;
-      font-size: 1.6rem;
-    }
-    p {
-      padding-top: 0;
-      font-size: 20px;
-      padding-left: 0;
-    }
-    ul{
-      width: 100%;
-    }
-    li {
-      text-align: start;
-    }
-  }
-  &.b{
-    p{
-      padding-left: 4%;
-    }
-  }
-}
-.DynamicGrid[data-blocks-count="2"] .DynamicGrid__item_withBg{
-  &.a{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    div:has(h3){
-      width: 100%;
-    }
-    h3{
-      text-align: start;
-      font-size: 1.9rem;
-    }
-  }
-}
-
-.DynamicGrid[data-blocks-count="3"] {
-  grid-template-areas:
-        "a b"
-        "a c";
-}
-@media(max-width: 768px){
-  .DynamicGrid{
-    margin-top: 10%;
-  }
-  .DynamicGrid[data-blocks-count="3"] {
-    height: 50rem;
-    padding-top:5%;
-    padding-bottom:5%;
-    margin-top:5%;
-    gap:6%;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
-    grid-template-areas:
-        "a"
-        "b"
-        "c";
-  }
-  .DynamicGrid[data-blocks-count="3"] .DynamicGrid__item{
-    height:100% !important;
-    width: 90%;
-    margin:auto;
-    div:has(div){
-      top:0;
-      left:12%;
-    }
-    p{
-      font-size:1rem;
-    }
-    &.b,
-    .c{
-      div{
-        margin:0;
-        padding:0;
-      }
-      p{
-        margin:0 auto auto auto;
-        padding:3%;
-      }
-    }
-    div:has(h3){
-      margin:5% auto auto auto;
-    }
-  }
-}
-.DynamicGrid[data-blocks-count="3"] .DynamicGrid__item.c, .DynamicGrid__item.b {
-  p{
-    text-align: center;
-  }
-}
-.DynamicGrid[data-blocks-count="3"] .DynamicGrid__item.c{
-  margin-top:0;
-}
-.DynamicGrid[data-blocks-count="3"] .DynamicGrid__item.b{
-  height: 68%;
-}
-.DynamicGrid--alternative[data-blocks-count="3"] {
+  height: auto;
   display: grid;
-  grid-template-areas:
-    "a c"
-    "b c";
-  grid-template-columns: 40% 53%;
-  gap:5%;
-}
+  padding-bottom:5rem;
+  padding-top:5rem;
+  gap: 2rem;
+  margin:auto;
+  justify-content: center;
+  h3{
+    font-size:2rem;
+  }
+  p{
+    font-size:1.625rem;
+  }
 
-.DynamicGrid--alternative[data-blocks-count="3"] .DynamicGrid--alternative{
   &__item{
-    &.a{
-      grid-area: a;
-      margin: auto auto 0 auto;
-      font-size: 2.1875rem;
-      height: 62.5%;
-      h3{
-        margin-top: 5%;
-      }
-    }
-    &.b{
-      grid-area: b;
-      margin-top: 0;
-      font-size: 2rem;
-      padding: 0 5% 0 5%;
-      height: 63.5%;
-      div:has(h3){
-        width: 100%;
-        padding:0;
-        h3{
-          text-align: start;
-        }
-      }
-    }
-    &.c{
-      grid-area: c;
-      height: auto;
-      padding-top: 10%;
-      padding-bottom: 10%;
-      margin:auto ;
-      p{
-        font-size: 1.625rem;
-        text-align: start;
-        margin-right:7%;
-      }
-    }
-  }
-}
-
-.DynamicGrid[data-blocks-count="5"] {
-  grid-template-columns: 46.5% 23% 23%;
-  grid-template-areas:
-        "a b c"
-        "a d e";
-}
-.DynamicGrid[data-blocks-count="5"] .DynamicGrid__item{
-  &.d,
-  &.e{
-    height:68%;
-  }
-}
-@media(max-width: 768px){
-  .DynamicGrid[data-blocks-count="5"]{
-    height: 50rem;
-    margin-bottom: 5%;
-    margin-top:5%;
-    gap:5%;
-    width: 90%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      "a a"
-      "b c"
-      "d e";
-  }
-  .DynamicGrid[data-blocks-count="5"] .DynamicGrid__item{
-    height: 100% !important;
-    h3{
-      font-size: 1.6rem;
-    }
-    p{
-      font-size: 1rem;
-    }
-    div:has(div){
-      top:0;
-      left:7.5%;
-    }
-    &.a{
-      div:has(h3){
-        margin:10% auto auto auto;
-        padding-bottom: 5%;
-      }
-   }
-  }
-}
-.DynamicGrid[data-blocks-count="6"] {
-  grid-template-areas:
-        "a a c d"
-        "b b e f";
-  grid-template-columns: 23% 22% 22% 22%;
-}
-@media (max-width: 768px) {
-  .DynamicGrid[data-blocks-count="6"] {
-    height: 140vh;
-    grid-template-areas:
-  "a a"
-  "b b"
-  "b b"
-  "c d"
-  "c d"
-  "e f"
-  "e f";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-  .DynamicGrid[data-blocks-count="6"] .DynamicGrid {
-
+    padding-bottom: 4rem;
     &__numAndLine{
-      top:0;
-      left:7.4%;
-    }
-
-  }
-.DynamicGrid[data-blocks-count="6"] .DynamicGrid__item{
-  &.a{
-    div:has(h3){
-      width:100%;
-    }
-    h3{
-      margin-left:0!important;
-    }
-  }
-  &.f{
-    grid-area: f;
-  }
-}
-}
-.DynamicGrid[data-blocks-count="6"] .DynamicGrid{
-  &__item{
-    &.a{
-      h3{
+      position: absolute;
+      top:2rem;
+      left:1.8rem;
+      display: flex;
+      flex-direction: row;
+      p{
+        font-size: 0.9rem!important;
+        font-weight: bold;
+        margin-left:0.2rem;
+      }
+      div{
+        border-top:2px solid white;
+        width:3rem;
         margin:auto;
       }
     }
+    border-radius: 30px;
+    &.a{
+      grid-area:a;
+      position: relative;
+    }
     &.b{
-      h3{
-        text-align: start;
-      }
-      p{
-        padding:0;
-        text-align:start;
-        margin-right: 13%;
-      }
+      grid-area:b;
     }
-    &.a,
-    &.c,
+    &.c{
+      grid-area:c;
+    }
     &.d{
-      margin-bottom: 0;
-      margin-top: auto;
+      grid-area:d;
     }
-    &.b,
-    &.e,
+    &.e{
+      grid-area:e;
+    }
     &.f{
-      margin-top: 0;
+      grid-area:f;
+    }
+
+
+  }
+}
+.DynamicGrid--alternative[data-blocks-count = "3"]{
+  grid-template-areas:
+  "a c"
+  "b c";
+  grid-template-columns:44% 46%;
+}
+.DynamicGrid--alternative[data-blocks-count = "3"] .DynamicGrid--alternative__item{
+  &.a{
+    position: relative;
+    div:has(h3){
+      margin-top:4rem;
+      margin-left:1.625rem;
+    }
+  }
+  &.b{
+    div:has(h3){
+      margin-top:2rem;
+      margin-left:1.625rem;
+      h3{
+        line-height: 1.5;
+      }
+    }
+  }
+  &.c{
+    div{
+      margin-top:3rem;
+      margin-left:1.625rem;
     }
   }
 }
-
-/* Привязка блоков к областям */
-.DynamicGrid__item.a {
-  grid-area: a;
-  margin:auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  div{
-    display: flex;
-    margin:7% 20% auto auto;
-
-  }
+.DynamicGrid[data-blocks-count = "3"]{
+  grid-template-areas:"a b" "a c";
+  grid-template-columns: 44% 46%;
+  grid-template-rows:1fr 1fr;
 }
-
-.DynamicGrid__item.b {
-  grid-area: b;
-}
-
-.DynamicGrid__item.c {
-  grid-area: c;
-}
-
-.DynamicGrid__item.d {
-  grid-area: d;
-}
-
-.DynamicGrid__item.e {
-  grid-area: e;
-}
-
-/* Стили для блоков */
-.DynamicGrid__item, .DynamicGrid--alternative__item {
-  border-radius: 40px;
-  height: 70%;
-  padding:5%;
-  width:100%;
-  &.b,
-  &.c,
-  &.d,
-  &.e,
-  &.f {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    p,h3{
-      text-align: center;
+.DynamicGrid[data-blocks-count = "3"] .DynamicGrid__item{
+  &.a{
+    div:has(h3){
+      margin-left:1.625rem;
+      margin-top:7.5rem;
+      padding-right:4rem;
     }
     h3{
-      font-size: 1.5625rem;
+      margin-bottom:1rem;
+    }
+    p{
+      font-size: 1.25rem;
     }
   }
   &.b,
   &.c{
-    margin-bottom:0;
-  }
-  &.d,
-  &.e{
-    margin-top:0  ;
-  }
-  div{
     display: flex;
-    flex-direction: column;
-    margin:auto;
-    h3{
-      font-size:2.1875rem;
-    }
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:2rem;
     p{
-      margin-top:2%
+      font-size: 1.5rem;
     }
   }
 }
-@media(max-width: 768px){
-  .DynamicGrid__item, .DynamicGrid--alternative__item{
-    height: 100%;
-    h3{
-      font-size: 1.33rem!important;
-    }
-    p{
-      font-size: 1rem!important;
+.DynamicGrid[data-blocks-count = "2"]{
+  grid-template-areas:
+  "a b";
+  grid-template-columns: 45% 45%;
+}
+.DynamicGrid[data-blocks-count = "2"] .DynamicGrid__item{
+  div:has(h3){
+    margin-left:1.625rem;
+    margin-top:5rem;
+  }
+  h3{
+    font-size:2.1785rem;
+    margin-bottom:1rem;
+  }
+  p,li,ol{
+    font-size:1.25rem;
+  }
+}
+.DynamicGrid[data-blocks-count = "2"] .DynamicGrid__item{
+  height: 30rem;
+  &.a{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &.b{
+    li{
+      margin-left:1.2rem;
     }
   }
+}
+.DynamicGrid[data-blocks-count = "5"]{
+  grid-template-areas:"a b c" "a d e";
+  grid-template-columns: 44% 22% 22%;
+  grid-template-rows: 1fr 1fr;
+}
+.DynamicGrid[data-blocks-count = "5"] .DynamicGrid__item{
+  p{
+    font-size: 1.25rem;
+  }
+  &.b,
+  &.c,
+  &.d,
+  &.e{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding:2rem;
+      text-align: center;
+  }
+  &.a{
+    padding-bottom:4rem;
+    padding-right: 4rem;
+    div:has(h3){
+      margin-left:1.625rem;
+      margin-top:6.68rem;
+      h3{
+        margin-bottom:1rem;
+      }
+    }
+  }
+
+}
+.DynamicGrid[data-blocks-count = "6"]{
+  grid-template-areas: "a c d" "b e f";
+  grid-template-columns: 44% 22% 22%;
+  grid-template-rows: 1fr 1fr;
+}
+.DynamicGrid[data-blocks-count = "6"] .DynamicGrid__item{
+  &.a{
+    div:has(h3){
+      margin-left:1.625rem;
+      padding-right: 4rem;
+      margin-top:4rem;
+      h3{
+        line-height: 1.5;
+      }
+    }
+  }
+  &.b{
+    div{
+      margin-left: 1.625rem;
+      margin-top:2rem;
+      padding-right: 4rem;
+      h3{
+        font-size:1.5rem;
+        margin-bottom:0.2rem;
+      }
+      p{
+        font-size:1.25rem;
+      }
+    }
+  }
+  &.c,
+  &.d,
+  &.e,
+  &.f{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:1.4rem;
+    h3{
+      font-size:1.5rem;
+    }
+  }
+
+  p{
+    font-size: 1.25rem;
+  }
+}
+@media(max-width: 768px){
+  .DynamicGrid, .DynamicGrid--alternative{
+    height: auto;
+  }
+  .DynamicGrid[data-blocks-count = "3"]{
+    grid-template-areas: "a" "a" "b" "c";
+    grid-template-columns: 90%;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .DynamicGrid--alternative[data-blocks-count = "3"]{
+
+    grid-template-columns:86%;
+    grid-template-areas:
+    "a"
+    "b"
+    "c";
+  }
+  .DynamicGrid[data-blocks-count = "2"]{
+    grid-template-areas: "a" "b";
+    grid-template-columns: 86%;
+    height: auto;
+  }
+  .DynamicGrid[data-blocks-count = "2"] .DynamicGrid__item{
+    padding-bottom: 4rem;
+  }
+  .DynamicGrid[data-blocks-count = "5"]{
+    grid-template-areas: "a a" "b c" "d e";
+    grid-template-columns:43% 43%;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 70rem;
+  }
+  .DynamicGrid[data-blocks-count = "6"]{
+    grid-template-areas:"a a" "b b" "c d" " e f";
+    grid-template-columns: 43% 43%;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    height: 75rem;
+  }
+
 }

@@ -38,8 +38,8 @@ const Infoblock: React.FC<DynamicGridProps> = ({ blocks, backgroundColor, color,
                             backgroundImage: `url(${block.backgroundImage})`,
                         }}
                     >
-                        {block.blockNum && <div className={layout === "alternative" ? "DynamicGrid--alternative__numAndLine":"DynamicGrid__numAndLine"}><div className="DynamicGrid__line"></div><p>{block.blockNum}</p></div>}
-                        <div>
+                        {block.blockNum && <div className={layout === "alternative" ? "DynamicGrid--alternative__item__numAndLine":"DynamicGrid__item__numAndLine"}><div className="DynamicGrid__line"></div><p>{block.blockNum}</p></div>}
+                        <div style={{position: "relative"}}>
                             {block.title && <h3>{block.title}</h3>}
                             {block.content && <p>{block.content}</p>}
                         </div>
