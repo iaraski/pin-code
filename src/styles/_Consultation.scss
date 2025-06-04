@@ -18,17 +18,18 @@
       overflow: auto;
       height: 30%;
       margin-bottom: 5%;
+      font-family: Evolventa, sans-serif;
+      padding:1.2rem;
       &::placeholder{
         font-family: Evolventa, sans-serif;
         font-size: 0.9375rem;
-        padding-top: 20px; /* Сдвигает текст вниз */
-        padding-left: 4%; /* Сдвигает текст вправо */
       }
     }
     input{
+      font-family: Evolventa, sans-serif;
       width: 100%;
       padding: 4%;
-      margin-bottom: 6%;
+      margin-bottom: 1.5rem;
       &::placeholder{
         font-family: Evolventa, sans-serif;
         font-size: 0.9375rem;

@@ -2,7 +2,7 @@
   width: 100%;
   height: auto;
   background-color: white;
-  padding: 1rem;
+  padding-bottom: 5rem;
   h2{
     color: black!important;
   }
@@ -12,6 +12,9 @@
       display: flex;
       flex-direction: row;
       gap: 1rem;
+      img{
+        width: 3rem;
+      }
     }
     p{
       font-size: 2.1785rem;
@@ -25,7 +28,7 @@
     height: auto;
     button{
       border: 1px solid $btn-colors;
-      margin:auto;
+      margin:auto auto auto 0;
       display: flex;
       justify-content: center;
     }
@@ -46,6 +49,7 @@
       width: 100%;
       padding: 1rem;
       margin-bottom: 1rem;
+      font-family: Evolventa, sans-serif;
       &::placeholder{
         font-family: Evolventa, sans-serif;
         font-size: 0.9375rem;

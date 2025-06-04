@@ -18,11 +18,13 @@ export default function Connection () {
                     </div>
                 </div>
                 <div className="connection_form">
-                    <form>
-                        <input type="text" placeholder="Ваш электронный адрес"/>
-                        <input type="text" placeholder="Ваше полное имя"/>
-                        <textarea placeholder="Ваши комментарии"/>
-                        <button className="button_white">Отправить сообщение</button>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="e698a120-9f85-4a8a-9fdc-2706117c6c73"/>
+                        <input type="text" name={"Почта"} placeholder="Ваш электронный адрес"/>
+                        <input type="text" name={"Имя"} placeholder="Ваше полное имя"/>
+                        <textarea placeholder="Ваши комментарии" name={"Сообщение"}/>
+                        <input type="checkbox" name="botcheck" className="hidden" style={{display:"none"}}/>
+                        <button type={"submit"} className="button_white">Отправить сообщение</button>
                     </form>
                 </div>
             </div>
