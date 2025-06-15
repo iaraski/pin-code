@@ -19,7 +19,7 @@ export default function App() {
         <Router basename="/pin-code">
             <Header />
             <Routes>
-                <Route path="/pin-code" element={<Home />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/products" element={<Products />} />

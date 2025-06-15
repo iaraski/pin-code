@@ -18,7 +18,7 @@ export default function Header(){
                     <Link to="/services" className={activeLink === "services" ? "active" : ""}
                           onClick={() => handleLinkClick("services")}>Услуги</Link>
                 </nav>
-                <Link to="/pin-code" className={activeLink === "logo_container" ? "logo_container" : "logo_container"}
+                <Link to="/" className={activeLink === "logo_container" ? "logo_container" : "logo_container"}
                       onClick={() => handleLinkClick("logo_container")}>
                     <img src={logo} alt=""/>
                 </Link>
@@ -28,7 +28,7 @@ export default function Header(){
                 </nav>
             </>}
             {width <= 768 && <>
-                <Link to = "pin-code"><img src={logo} alt=""/></Link>
+                <Link to = "/"><img src={logo} alt=""/></Link>
                 <nav>
                 <Link to="/portfolio" className={activeLink === "portfolio" ? "active" : ""}
                           onClick={() => handleLinkClick("portfolio")}>Портфолио
