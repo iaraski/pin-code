@@ -24,10 +24,10 @@ const Infoblock: React.FC<DynamicGridProps> = ({ blocks, backgroundColor, color,
         <div
             className={`${layout === "alternative" ? "DynamicGrid--alternative" : "DynamicGrid "}`}
             style={{backgroundColor: backgroundColorBlock}}
-            data-blocks-count={blocks.length} // Передаем количество блоков
+            data-blocks-count={blocks.length}
         >
             {blocks.map((block, index) => {
-                const areaName = String.fromCharCode(97 + index); // Преобразуем индекс в буквы (a, b, c, ...)
+                const areaName = String.fromCharCode(97 + index);
                 return (
                     <div
                         key={block.id}

@@ -142,6 +142,9 @@
     background-color:$background-color;
     .background{
       background-image: url("../public/images/bg.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
       display: flex;
       justify-content: center;
       align-items: center;
